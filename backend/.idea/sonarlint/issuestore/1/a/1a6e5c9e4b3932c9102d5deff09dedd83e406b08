@@ -1,0 +1,5 @@
+
+lpython:S1542"ORename function "getRoutes" to match the regular expression ^[a-z_][a-z0-9_]*$.(Ή©—ϊÿÿÿÿ
+Gpython:S1481"*Remove the unused local variable "routes".(Ρέμπόÿÿÿÿ
+ipython:S1542"QRename function "getProducts" to match the regular expression ^[a-z_][a-z0-9_]*$.(βƒ‹
+mpython:S1542"PRename function "getProduct" to match the regular expression ^[a-z_][a-z0-9_]*$.(ΚΠ®Ηόÿÿÿÿ
