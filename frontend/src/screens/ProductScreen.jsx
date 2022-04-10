@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
+import Flags from "country-flag-icons/react/3x2";
+
 import { Loader } from "../components/Loader";
 import { Message } from "../components/Message";
+
 import {
   Link,
   useNavigate,
@@ -57,6 +61,12 @@ export function ProductScreen() {
             <ListGroup varian="flush">
               <ListGroup.Item>
                 <h3>{product.name}</h3>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                <Flags.RU
+                  title="russian"
+                  className="small-flag"
+                />
               </ListGroup.Item>
 
               <ListGroup.Item>
