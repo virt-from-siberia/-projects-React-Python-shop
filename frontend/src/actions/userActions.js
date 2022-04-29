@@ -40,3 +40,10 @@ export const login =
       });
     }
   };
+
+export const logout = () => (dispatch) => {
+  localStorage.removeItem(STORAGE_NAME_USER_INFO);
+  dispatch({
+    type: USER_LOGOUT,
+  });
+};
