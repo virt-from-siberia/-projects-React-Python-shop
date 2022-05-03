@@ -39,8 +39,7 @@ export const CartScreen = () => {
   const removeFromCartHandler = (id) =>
     dispatch(removeFromCart(id));
 
-  const checkoutHandler = () =>
-    navigate(`/login?redirect=shopping`);
+  const checkoutHandler = () => navigate(`/shipping`);
 
   return (
     <Row>
