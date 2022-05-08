@@ -21,6 +21,7 @@ export const STORAGE_NAME = "cartItems";
 export const STORAGE_NAME_USER_INFO = "userInfo";
 export const STORAGE_NAME_SHIPPING_ADDRESS =
   "shippingAddress";
+export const STORAGE_NAME_PAYMENT_METHOD = "paymentMethod";
 
 const reducer = combineReducers({
   productList: productListReducers,
