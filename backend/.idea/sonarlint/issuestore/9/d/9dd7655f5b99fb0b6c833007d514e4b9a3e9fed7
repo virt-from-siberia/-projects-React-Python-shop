@@ -1,4 +1,0 @@
-
-wpython:S117"[Rename this local variable "orderItems" to match the regular expression ^[_a-z][a-z0-9_]*$.(Øíªýþÿÿÿÿ
-hpython:S1542"PRename function "orderItems" to match the regular expression ^[a-z_][a-z0-9_]*$.(Ò×¤Ð
-Dpython:S1481!",Remove the unused local variable "shipping".(´ÏÞÍ

@@ -1,8 +1,7 @@
-import product as product
 from django.shortcuts import render
 
-from base.models import Product, Order, Order, OrderItem, ShippingAddress
-from base.serializer import ProductSerializer, OrderSerializer
+from base.models import Product, Order, OrderItem, ShippingAddress
+from base.serializer import ProductSerializer, OrderItemSerializer
 
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
@@ -12,9 +11,10 @@ from rest_framework import status
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
-def orderItems(request):
+def addOrderItems(request):
     user = request.user
     data = request.data
+
     orderItems = data['orderItems']
 
     if orderItems and len(orderItems) == 0:
@@ -54,5 +54,5 @@ def orderItems(request):
             product.countInStock -= item.qty
             product.save()
 
-    serializer = OrderSerializer(order, many=True)
-    return Response(serializer.data)
+        serializer = OrderItemSerializer(order, many=False)
+        return Response(serializer.data)
